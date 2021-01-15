@@ -1,0 +1,15 @@
+#banner{	
+	width: 728px;
+	height: 90px;
+}
+
+
+#legalBtn{	
+	@include pos(13, 50);	
+}
+
+
+.bgGrad{
+	height: 66px;
+	opacity: .5;
+}

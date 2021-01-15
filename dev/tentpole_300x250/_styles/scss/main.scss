@@ -1,0 +1,21 @@
+
+
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/bb.scss';
+
+
+
+.player1{		
+	@include pos-scale-rotate(70, 10, .5, 0);
+}
+
+.player2{		
+	@include pos-scale-rotate(-90, -20, .5, 0);
+}
+
+
+
+.ball{	
+	@include pos-scale-rotate(70, 10, .5, 0);
+}
+
