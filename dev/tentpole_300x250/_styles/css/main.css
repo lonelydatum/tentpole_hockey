@@ -248,10 +248,10 @@ sup {
   opacity: .5;
 }
 
-.player1 {
-  -webkit-transform: translate(70px, 10px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(70px, 10px) scale(0.5) rotate(0deg);
-  transform: translate(70px, 10px) scale(0.5) rotate(0deg);
+.player1, .puck {
+  -webkit-transform: translate(-80px, -40px) scale(0.5) rotate(0deg);
+  -ms-transform: translate(-80px, -40px) scale(0.5) rotate(0deg);
+  transform: translate(-80px, -40px) scale(0.5) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -260,9 +260,9 @@ sup {
 }
 
 .player2 {
-  -webkit-transform: translate(-90px, -20px) scale(0.5) rotate(0deg);
-  -ms-transform: translate(-90px, -20px) scale(0.5) rotate(0deg);
-  transform: translate(-90px, -20px) scale(0.5) rotate(0deg);
+  -webkit-transform: translate(80px, 0px) scale(0.5) rotate(0deg);
+  -ms-transform: translate(80px, 0px) scale(0.5) rotate(0deg);
+  transform: translate(80px, 0px) scale(0.5) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
