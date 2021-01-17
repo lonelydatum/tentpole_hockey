@@ -63,7 +63,7 @@ function init(id){
 		break;
 
 		case "320x50":
-		tl.set(".ill", {transformOrigin:`${w/2}px ${h*2}px`, x:-w/4, y:-h })
+		tl.set(".ill", {transformOrigin:`${w/2.5}px ${h*2}px`, x:-w/5, y:-h })
 		break;
 
 		case "728x90":

@@ -1,0 +1,21 @@
+
+
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/dbb.scss';
+
+
+
+.player1, .puck{		
+	@include pos-scale-rotate(-80, -40, .5, 0);
+}
+
+.player2{		
+	@include pos-scale-rotate(80, 0, .5, 0);
+}
+
+
+
+.ill{
+	
+	// @include pos-scale(0, 0, 0.6);
+}
