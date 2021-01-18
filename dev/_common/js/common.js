@@ -99,4 +99,6 @@ function init(id){
 	return tl
 }
 
-export {size, frameEnd, frameEndPool, init}
+const starttime = .7
+
+export {size, frameEnd, frameEndPool, init, starttime}

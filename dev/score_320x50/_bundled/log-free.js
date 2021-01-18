@@ -107,10 +107,13 @@ function init(id) {
 	return tl;
 }
 
+var starttime = .7;
+
 exports.size = size;
 exports.frameEnd = frameEnd;
 exports.frameEndPool = frameEndPool;
 exports.init = init;
+exports.starttime = starttime;
 
 },{}],2:[function(require,module,exports){
 "use strict";
