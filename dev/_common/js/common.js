@@ -101,5 +101,6 @@ function init(id){
 
 const starttime = .7
 const endTime = 1.6
+const endTimeShot = 2
 
-export {size, frameEnd, frameEndPool, init, starttime, endTime}
+export {size, frameEnd, frameEndPool, init, starttime, endTime, endTimeShot}

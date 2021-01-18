@@ -1,4 +1,4 @@
-import {endTime, starttime, size, frameEnd, init} from '../../_common/js/common.js'
+import {endTimeShot, starttime, size, frameEnd, init} from '../../_common/js/common.js'
 import {player} from '../../_common/js/striker.js'
 
 
@@ -17,7 +17,7 @@ function start(){
 	
 	
 	
-	tl.add(frameEnd(), `+=${endTime}`)
+	tl.add(frameEnd(), `+=${endTimeShot}`)
 
 }
 
