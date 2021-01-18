@@ -108,12 +108,14 @@ function init(id) {
 }
 
 var starttime = .7;
+var endTime = 1.6;
 
 exports.size = size;
 exports.frameEnd = frameEnd;
 exports.frameEndPool = frameEndPool;
 exports.init = init;
 exports.starttime = starttime;
+exports.endTime = endTime;
 
 },{}],2:[function(require,module,exports){
 "use strict";
@@ -167,7 +169,7 @@ function start() {
 	tl.from(".t1a", .1, { x: "-=300", opacity: 0 }, _commonJsCommonJs.starttime);
 	tl.from(".t1b", .01, { opacity: 0 }, "+=1");
 
-	tl.add((0, _commonJsCommonJs.frameEnd)(), "+=2");
+	tl.add((0, _commonJsCommonJs.frameEnd)(), '+=' + _commonJsCommonJs.endTime);
 }
 
 start();

@@ -108,12 +108,14 @@ function init(id) {
 }
 
 var starttime = .7;
+var endTime = 1.6;
 
 exports.size = size;
 exports.frameEnd = frameEnd;
 exports.frameEndPool = frameEndPool;
 exports.init = init;
 exports.starttime = starttime;
+exports.endTime = endTime;
 
 },{}],2:[function(require,module,exports){
 "use strict";
