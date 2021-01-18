@@ -4,6 +4,9 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var banner = document.getElementById('banner');
 var size = { w: banner.offsetWidth, h: banner.offsetHeight };
 
@@ -43,6 +46,26 @@ function frameEndPool() {
 	return tl;
 }
 
+function transformOrigin(id, percent) {
+	var el = document.getElementById(id);
+	var w = el.offsetWidth;
+	var h = el.offsetHeight;
+	var transformOrigin = {
+		x: w * percent.w,
+		y: h * percent.h
+	};
+	var pos = {
+		x: -transformOrigin.x / 2,
+		y: -transformOrigin.y / 2
+	};
+
+	var result = _extends({
+		transformOrigin: transformOrigin.x + "px " + transformOrigin.y + "px"
+	}, pos);
+
+	return result;
+}
+
 function init(id) {
 	console.log(id);
 	TweenLite.defaultEase = Power3.easeOut;
@@ -69,7 +92,7 @@ function init(id) {
 			break;
 
 		case "320x50":
-			tl.set(".ill", { transformOrigin: w / 2.5 + "px " + h * 2 + "px", x: -w / 5, y: -h });
+			tl.set(".ill", transformOrigin("ill", { w: .375, h: 1 }));
 			break;
 
 		case "728x90":

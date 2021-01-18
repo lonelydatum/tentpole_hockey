@@ -39,6 +39,27 @@ function frameEndPool(){
 	return tl
 }
 
+function transformOrigin(id, percent){
+	const el = document.getElementById(id)
+	const w = el.offsetWidth
+	const h = el.offsetHeight
+	const transformOrigin = {
+		x: w*percent.w,
+		y: h*percent.h
+	}
+	const pos = {
+		x: -transformOrigin.x/2,
+		y: -transformOrigin.y/2,
+	}
+	
+	const result = {
+		transformOrigin: `${transformOrigin.x}px ${transformOrigin.y}px`,
+		...pos
+	}
+
+	return result
+}
+
 function init(id){
 	console.log(id);
 	TweenLite.defaultEase = Power3.easeOut
@@ -63,7 +84,7 @@ function init(id){
 		break;
 
 		case "320x50":
-		tl.set(".ill", {transformOrigin:`${w/2.5}px ${h*2}px`, x:-w/5, y:-h })
+		tl.set(".ill", transformOrigin("ill", {w:.375, h:1}) )
 		break;
 
 		case "728x90":
